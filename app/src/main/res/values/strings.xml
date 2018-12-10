@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TeamworkTechTest</string>
+
+    <string name="showtasks_title">My Tasks</string>
+    <string name="showtasks_no_tasks">You have no tasks</string>
+    <plurals name="showtasks_tasks_added">
+        <item quantity="one">%d new task was added</item>
+        <item quantity="other">%d new tasks were added</item>
+    </plurals>
+    <string name="showtasks_get_tasks_error">Error retrieving tasks. Do you have internet connection?</string>
+    <string name="showtasks_retry">Retry</string>
+    <string name="showtasks_refresh">Refresh</string>
+    <string name="task_avatar_contentdescription">Task Avatar</string>
+    <string name="task_status">Status: %s</string>
+
+    <string name="addtasks_title">Add Tasks</string>
+    <string name="addtasks_task_name_hint">Task Name</string>
+    <string name="addtasks_cancel_dialog_text">Leave without adding tasks?</string>
+    <string name="addtasks_cancel_dialog_leave">Leave</string>
+    <string name="addtasks_cancel_dialog_stay">Stay</string>
+    <string name="addtasks_error">Error adding tasks. Do you have internet connection?</string>
+    <string name="addtasks_menu_done">Done</string>
+</resources>

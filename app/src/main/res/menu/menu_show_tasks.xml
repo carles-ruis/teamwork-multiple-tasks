@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_show_tasks_refresh"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/showtasks_refresh"
+        app:iconTint="@android:color/white"
+        app:showAsAction="always" />
+
+</menu>
