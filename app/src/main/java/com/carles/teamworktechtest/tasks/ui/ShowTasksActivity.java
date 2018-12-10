@@ -120,6 +120,7 @@ public class ShowTasksActivity extends BaseActivity implements ShowTasksView {
         progressBar.setVisibility(GONE);
         recyclerView.setVisibility(VISIBLE);
         adapter.addItems(tasks);
+        recyclerView.scrollToPosition(0);
     }
 
     @Override
