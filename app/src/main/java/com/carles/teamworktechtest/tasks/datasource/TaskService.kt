@@ -1,8 +1,5 @@
 package com.carles.teamworktechtest.tasks.datasource
 
-import com.carles.teamworktechtest.tasks.model.AddMultipleTasksRequest
-import com.carles.teamworktechtest.tasks.model.AddMultipleTasksResponse
-import com.carles.teamworktechtest.tasks.model.GetTasksResponse
 import io.reactivex.Observable
 import retrofit2.http.Body
 import retrofit2.http.GET

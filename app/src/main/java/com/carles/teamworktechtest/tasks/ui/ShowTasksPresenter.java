@@ -4,7 +4,7 @@ import android.util.Log;
 
 import com.carles.teamworktechtest.common.ui.BasePresenter;
 import com.carles.teamworktechtest.tasks.model.Task;
-import com.carles.teamworktechtest.tasks.repository.TaskRepository;
+import com.carles.teamworktechtest.tasks.datasource.TaskRepository;
 
 import java.util.Collections;
 import java.util.List;
@@ -61,15 +61,11 @@ public class ShowTasksPresenter extends BasePresenter<ShowTasksView> {
         view.showErrorAndRetry();
     }
 
-    public void onRetryClicked() {
+    void onRefreshClicked() {
         getTasks();
     }
 
-    public void onRefreshClicked() {
-        getTasks();
-    }
-
-    public void onAddTasksResult(int tasksAdded) {
+    void onAddTasksResult(int tasksAdded) {
         if (tasksAdded > 0) {
             view.showTasksAddedFeedback(tasksAdded);
         }

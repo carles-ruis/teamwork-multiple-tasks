@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/showtasks_coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -21,9 +22,8 @@
             android:paddingBottom="80dp"
             app:layoutManager="android.support.v7.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar" />
-
-        <include layout="@layout/view_progress" />
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            tools:listitem="@layout/item_task" />
 
         <TextView
             android:id="@+id/showtasks_no_tasks_textview"
@@ -49,4 +49,7 @@
         android:layout_marginBottom="@dimen/default_margin"
         android:src="@drawable/ic_add_black_24dp"
         android:tint="@android:color/white" />
+
+    <include layout="@layout/view_progress" />
+
 </android.support.design.widget.CoordinatorLayout>

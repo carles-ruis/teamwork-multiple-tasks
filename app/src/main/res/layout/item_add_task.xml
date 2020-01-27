@@ -1,41 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-    <Space
-        android:id="@+id/addtask_left_space"
-        android:layout_width="@dimen/touchable_area_size"
-        android:layout_height="@dimen/touchable_area_size"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/addtask_content_textview"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="16dp"
         android:ellipsize="end"
         android:gravity="center_vertical"
         android:maxLines="1"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-        app:layout_constraintBottom_toBottomOf="@id/addtask_left_space"
+        app:layout_constraintBottom_toBottomOf="@id/addtask_delete_button"
         app:layout_constraintEnd_toStartOf="@id/addtask_delete_button"
-        app:layout_constraintStart_toEndOf="@id/addtask_left_space"
-        app:layout_constraintTop_toTopOf="@id/addtask_left_space" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/addtask_delete_button"
+        tools:text="@tools:sample/full_names" />
 
-    <FrameLayout
+    <ImageView
         android:id="@+id/addtask_delete_button"
         android:layout_width="@dimen/touchable_area_size"
         android:layout_height="@dimen/touchable_area_size"
+        android:scaleType="center"
+        android:src="@drawable/ic_delete_black_24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/addtask_left_space">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_delete_black_24dp" />
-    </FrameLayout>
-
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

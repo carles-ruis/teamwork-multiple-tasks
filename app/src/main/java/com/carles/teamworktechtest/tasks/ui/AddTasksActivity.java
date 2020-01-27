@@ -18,7 +18,7 @@ import com.carles.teamworktechtest.common.ui.BaseActivity;
 import com.carles.teamworktechtest.common.ui.BasePresenter;
 import com.carles.teamworktechtest.common.ui.OnTextChangeListener;
 import com.carles.teamworktechtest.tasks.datasource.TaskCloudDatasource;
-import com.carles.teamworktechtest.tasks.repository.TaskRepository;
+import com.carles.teamworktechtest.tasks.datasource.TaskRepository;
 
 import java.util.ArrayList;
 
@@ -37,7 +37,7 @@ public class AddTasksActivity extends BaseActivity implements AddTasksView, AddT
     private RecyclerView recyclerView;
     private EditText newTaskEditText;
     private View clearTextButton;
-    private View confirmTextButton;
+    private View doneTextButton;
     private View progressBar;
     private MenuItem addTasksMenuItem;
 
@@ -63,9 +63,9 @@ public class AddTasksActivity extends BaseActivity implements AddTasksView, AddT
         clearTextButton.setVisibility(INVISIBLE);
         clearTextButton.setOnClickListener(view -> newTaskEditText.setText(""));
 
-        confirmTextButton = findViewById(R.id.addtasks_confirmtext_button);
-        confirmTextButton.setVisibility(INVISIBLE);
-        confirmTextButton.setOnClickListener(view -> {
+        doneTextButton = findViewById(R.id.addtasks_done_button);
+        doneTextButton.setVisibility(INVISIBLE);
+        doneTextButton.setOnClickListener(view -> {
             adapter.addItem(newTaskEditText.getText().toString());
             newTaskEditText.setText("");
         });
@@ -76,7 +76,7 @@ public class AddTasksActivity extends BaseActivity implements AddTasksView, AddT
             public void onTextChanged(String text) {
                 boolean hasText = !TextUtils.isEmpty(text);
                 clearTextButton.setVisibility(hasText ? VISIBLE : INVISIBLE);
-                confirmTextButton.setVisibility(hasText ? VISIBLE : INVISIBLE);
+                doneTextButton.setVisibility(hasText ? VISIBLE : INVISIBLE);
                 updateAddTasksIconVisibility();
 
             }

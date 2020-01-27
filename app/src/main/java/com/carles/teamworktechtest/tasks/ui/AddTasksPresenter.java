@@ -3,7 +3,7 @@ package com.carles.teamworktechtest.tasks.ui;
 import android.util.Log;
 
 import com.carles.teamworktechtest.common.ui.BasePresenter;
-import com.carles.teamworktechtest.tasks.repository.TaskRepository;
+import com.carles.teamworktechtest.tasks.datasource.TaskRepository;
 
 import java.util.List;
 

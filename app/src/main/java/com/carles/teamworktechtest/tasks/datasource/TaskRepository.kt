@@ -1,6 +1,5 @@
-package com.carles.teamworktechtest.tasks.repository
+package com.carles.teamworktechtest.tasks.datasource
 
-import com.carles.teamworktechtest.tasks.datasource.TaskCloudDatasource
 import com.carles.teamworktechtest.tasks.model.Task
 import io.reactivex.Observable
 

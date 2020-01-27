@@ -37,7 +37,7 @@ public class TasksAdapter extends RecyclerView.Adapter<TasksAdapter.ViewHolder> 
         return items.size();
     }
 
-    public void addItems(List<Task> newItems) {
+    void addItems(List<Task> newItems) {
         items.clear();
         items.addAll(newItems);
         notifyDataSetChanged();

@@ -18,7 +18,7 @@ import com.carles.teamworktechtest.common.ui.BaseActivity;
 import com.carles.teamworktechtest.common.ui.BasePresenter;
 import com.carles.teamworktechtest.tasks.datasource.TaskCloudDatasource;
 import com.carles.teamworktechtest.tasks.model.Task;
-import com.carles.teamworktechtest.tasks.repository.TaskRepository;
+import com.carles.teamworktechtest.tasks.datasource.TaskRepository;
 
 import java.util.List;
 
